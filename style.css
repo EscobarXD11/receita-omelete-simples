@@ -1,0 +1,141 @@
+/* Fundo geral da página */
+body {
+    background-color: rgb(250, 235, 215);
+  }
+  
+  /* Container principal */
+  main {
+    background-color: white;
+    border-radius: 15px;
+    width: 800px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 5px 5px 15px rgba(185, 161, 127, 0.521); /* sombra suave */
+  }
+  
+  /* Imagem centralizada e responsiva */
+  img {
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 1000px; /* limita o tamanho em telas grandes */
+  }
+  
+  /* Título principal */
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+  }
+  
+  /* Parágrafos com alinhamento visual consistente */
+  p {
+    margin-left: 39px;
+  }
+  
+  /* Seção de preparação */
+  .preparation {
+    background-color: rgba(233, 110, 212, 0.089);
+    padding: 15px;
+    border-radius: 15px;
+    width: 88%;
+    margin: 20px auto; /* centraliza */
+  }
+  
+  .preparation h2 {
+    color: rgba(119, 39, 129, 0.788);
+  }
+  
+  /* Lista ordenada (ol) e não ordenada (ul) */
+  ol,
+  ul {
+    margin-left: -17px;
+  }
+  
+  /* Itens de lista */
+  li {
+    margin-top: 10px;
+    text-indent: 1em; /* desloca o texto da bolinha */
+  }
+  
+  /* Linha divisória */
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #5f5f5f27;
+    margin: 30px 0;
+  }
+  
+  /* Seção de ingredientes */
+  .ingredients  {
+
+    li {
+        margin-left: 30px;
+    }
+
+  h2 {
+    color: #6e3a09ce;
+    font-size: 30px;
+    margin-left: 33px;
+
+  }
+  
+}
+
+.ingredients li::marker {
+    color: #6e3a09ce; /* cor das bolinhas */
+  }
+  
+  /* Seção de instruções */
+  .instructions h2 {
+    margin-left: 33px;
+    color: #6e3a09ce;
+    font-size: 30px;
+  }
+  
+  .instructions li::marker {
+    color: #6e3a09ce;
+  }
+  
+  .instructions ol {
+    margin-left: 13px;
+  }
+  
+  /* Seção de informação nutricional */
+  .nutrition {
+ 
+    h2 {
+    color: #6e3a09ce;
+    font-size: 30px;
+    margin-left: 33px;
+  }
+  }
+  
+  .nutrition .valores {
+    margin-left: 33px;
+    margin-bottom: 26px;
+  }
+  
+  .nutrition hr {
+    border: none;
+    height: 2px;
+    background-color: #5f5f5f27;
+    margin: 20px 0;
+    margin-top: -3px;
+  }
+  
+  /* Estilização de alinhamento entre nome e valor dos nutrientes */
+  .espaco {
+    color: #6e3a09ce;
+    margin-left: 190px;
+  }
+  
+  .espaco2 {
+    margin-left: 20px;
+  }
+  
+  .espaco0 {
+    color: #6e3a09ce;
+    margin-left: 165px;
+  }
+  
