@@ -1,141 +1,183 @@
+/* Declaração da fonte Outfit */
+@font-face {
+  font-family: 'Outfit'; /* Nome da fonte */
+  src: url('Outfit-VariableFont_wght.ttf') format('truetype'); /* Caminho correto para o arquivo de fonte */
+  font-weight: normal; /* Define o peso da fonte */
+  font-style: normal; /* Define o estilo da fonte */
+}
+
+/* Declaração da fonte Young Serif */
+@font-face {
+  font-family: 'Young Serif'; /* Nome da fonte */
+  src: url('YoungSerif-Regular.ttf') format('truetype'); /* Caminho correto para o arquivo de fonte */
+  font-weight: normal; /* Define o peso da fonte */
+  font-style: normal; /* Define o estilo da fonte */
+}
+
 /* Fundo geral da página */
 body {
-    background-color: rgb(250, 235, 215);
-  }
-  
-  /* Container principal */
-  main {
-    background-color: white;
-    border-radius: 15px;
-    width: 800px;
-    padding: 30px;
-    margin: auto;
-    box-shadow: 5px 5px 15px rgba(185, 161, 127, 0.521); /* sombra suave */
-  }
-  
-  /* Imagem centralizada e responsiva */
-  img {
-    border-radius: 15px;
-    display: block;
-    margin: auto;
-    width: 90%;
-    max-width: 1000px; /* limita o tamanho em telas grandes */
-  }
-  
-  /* Título principal */
-  h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 40px;
-  }
-  
-  /* Parágrafos com alinhamento visual consistente */
-  p {
-    margin-left: 39px;
-  }
-  
-  /* Seção de preparação */
-  .preparation {
-    background-color: rgba(233, 110, 212, 0.089);
-    padding: 15px;
-    border-radius: 15px;
-    width: 88%;
-    margin: 20px auto; /* centraliza */
-  }
-  
-  .preparation h2 {
-    color: rgba(119, 39, 129, 0.788);
-  }
-  
-  /* Lista ordenada (ol) e não ordenada (ul) */
-  ol,
-  ul {
-    margin-left: -17px;
-  }
-  
-  /* Itens de lista */
-  li {
-    margin-top: 10px;
-    text-indent: 1em; /* desloca o texto da bolinha */
-  }
-  
-  /* Linha divisória */
-  hr {
-    border: none;
-    height: 2px;
-    background-color: #5f5f5f27;
-    margin: 30px 0;
-  }
-  
-  /* Seção de ingredientes */
-  .ingredients  {
+    background-color: rgb(250, 235, 215); /* Cor de fundo da página */
+}
+
+/* Container principal */
+main {
+    background-color: white; /* Cor de fundo do container */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 800px; /* Largura do container */
+    padding: 30px; /* Espaçamento interno */
+    margin: auto; /* Centraliza o container */
+    box-shadow: 5px 5px 15px rgba(185, 161, 127, 0.521); /* Sombra suave ao redor do container */
+}
+
+/* Imagem centralizada e responsiva */
+img {
+    border-radius: 15px; /* Bordas arredondadas para a imagem */
+    display: block; /* Faz com que a imagem seja um bloco */
+    margin: auto; /* Centraliza a imagem horizontalmente */
+    width: 90%; /* A largura da imagem será 90% da largura do container */
+    max-width: 1000px; /* Limita a largura da imagem a 1000px */
+}
+
+/* Título principal */
+h1 {
+    font-weight: 600; /* Peso da fonte */
+    margin-left: 40px; /* Margem à esquerda */
+    font-family: 'Outfit', sans-serif; /* Família da fonte */
+    color: rgb(44, 40, 40); /* Cor do texto */
+}
+
+/* Parágrafos com alinhamento visual consistente */
+p {
+    margin-left: 39px; /* Margem à esquerda */
+    font-family: 'Outfit', sans-serif; /* Família da fonte */
+    color: #202020c5; /* Cor do texto */
+}
+
+/* Seção de preparação */
+.preparation {
+    background-color: rgba(233, 110, 212, 0.089); /* Cor de fundo suave para a preparação */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 88%; /* Largura da seção */
+    margin: 20px auto; /* Centraliza a seção */
+}
+
+/* Estilização do marcador da lista na seção de preparação */
+.preparation li::marker {
+    color: #753ea1b7; /* Cor do marcador */
+    font-weight: 700; /* Deixa o marcador mais grosso */
+}
+
+/* Título da seção de preparação */
+.preparation h2 {
+    color: rgba(119, 39, 129, 0.788); /* Cor do título */
+    font-family: 'Outfit', sans-serif; /* Família da fonte */
+    font-weight: 590; /* Peso da fonte (mais fino) */
+}
+
+/* Listas ordenadas (ol) e não ordenadas (ul) */
+ol, ul {
+    margin-left: -17px; /* Ajusta a margem à esquerda das listas */
+    font-family: 'Outfit', sans-serif; /* Família da fonte */
+    color: #202020c5; /* Cor do texto */
+}
+
+/* Itens de lista */
+li {
+    margin-top: 10px; /* Espaço entre os itens da lista */
+    text-indent: 1em; /* Indenta o texto da lista (faz o texto começar mais à direita) */
+}
+
+/* Linha divisória */
+hr {
+    border: none; /* Remove a borda padrão */
+    height: 2px; /* Define a altura da linha */
+    background-color: #5f5f5f27; /* Cor da linha divisória */
+    margin: 30px 0; /* Espaçamento acima e abaixo da linha */
+}
+
+/* Seção de ingredientes */
+.ingredients {
 
     li {
-        margin-left: 30px;
+        margin-left: 30px; /* Ajusta a margem à esquerda dos itens da lista */
+        font-family: 'Outfit', sans-serif; /* Família da fonte */
+        color: #202020c5; /* Cor do texto */
     }
 
-  h2 {
-    color: #6e3a09ce;
-    font-size: 30px;
-    margin-left: 33px;
-
-  }
-  
+    h2 {
+        color: #6e3a09ce; /* Cor do título */
+        font-size: 30px; /* Tamanho da fonte */
+        margin-left: 33px; /* Margem à esquerda */
+    }
 }
 
 .ingredients li::marker {
-    color: #6e3a09ce; /* cor das bolinhas */
-  }
-  
-  /* Seção de instruções */
-  .instructions h2 {
-    margin-left: 33px;
-    color: #6e3a09ce;
-    font-size: 30px;
-  }
-  
-  .instructions li::marker {
-    color: #6e3a09ce;
-  }
-  
-  .instructions ol {
-    margin-left: 13px;
-  }
-  
-  /* Seção de informação nutricional */
-  .nutrition {
- 
+    color: #6e3a09ce; /* Cor do marcador (números) na lista de ingredientes */
+}
+
+/* Seção de instruções */
+.instructions h2 {
+    margin-left: 33px; /* Margem à esquerda */
+    color: #6e3a09ce; /* Cor do título */
+    font-size: 30px; /* Tamanho da fonte */
+}
+
+/* Estilização dos marcadores da lista de instruções */
+.instructions li::marker {
+    color: #6e3a09ce; /* Cor dos números na lista */
+    font-weight: 700; /* Deixa os números mais grossos */
+}
+
+/* Lista ordenada dentro da seção de instruções */
+.instructions ol {
+    margin-left: 13px; /* Ajusta a margem à esquerda */
+    font-family: 'Outfit', sans-serif; /* Família da fonte */
+    color: #202020c5; /* Cor do texto */
+}
+
+/* Seção de informação nutricional */
+.nutrition {
+
     h2 {
-    color: #6e3a09ce;
-    font-size: 30px;
-    margin-left: 33px;
-  }
-  }
-  
-  .nutrition .valores {
-    margin-left: 33px;
-    margin-bottom: 26px;
-  }
-  
-  .nutrition hr {
-    border: none;
-    height: 2px;
-    background-color: #5f5f5f27;
-    margin: 20px 0;
-    margin-top: -3px;
-  }
-  
-  /* Estilização de alinhamento entre nome e valor dos nutrientes */
-  .espaco {
-    color: #6e3a09ce;
-    margin-left: 190px;
-  }
-  
-  .espaco2 {
-    margin-left: 20px;
-  }
-  
-  .espaco0 {
-    color: #6e3a09ce;
-    margin-left: 165px;
-  }
-  
+        color: #6e3a09ce; /* Cor do título */
+        font-size: 30px; /* Tamanho da fonte */
+        margin-left: 33px; /* Margem à esquerda */
+    }
+}
+
+/* Estilo para os valores nutricionais */
+.nutrition .valores {
+    margin-left: 33px; /* Margem à esquerda */
+    margin-bottom: 26px; /* Margem inferior */
+    font-family: 'Outfit', sans-serif; /* Família da fonte */
+    color: #202020c5; /* Cor do texto */
+}
+
+/* Linha divisória na seção de nutrição */
+.nutrition hr {
+    border: none; /* Remove a borda padrão */
+    height: 2px; /* Define a altura da linha */
+    background-color: #5f5f5f27; /* Cor da linha divisória */
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+    margin-top: -3px; /* Ajusta a margem superior */
+}
+
+/* Estilização de alinhamento entre nome e valor dos nutrientes */
+.espaco {
+    color: #6e3a09ce; /* Cor do texto */
+    margin-left: 190px; /* Ajusta a margem à esquerda */
+    font-weight: 700; /* Deixa o texto mais grosso */
+}
+
+/* Estilo adicional para o alinhamento entre os valores de nutrientes */
+.espaco2 {
+    margin-left: 20px; /* Ajusta a margem à esquerda */
+}
+
+/* Estilo para um valor nutricional com o nome em destaque */
+.espaco0 {
+    color: #6e3a09ce; /* Cor do texto */
+    margin-left: 165px; /* Ajusta a margem à esquerda */
+    font-weight: 700; /* Deixa o texto mais grosso */
+}
